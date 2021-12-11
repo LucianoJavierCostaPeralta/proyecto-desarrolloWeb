@@ -21,7 +21,6 @@ h1 , h2 , h3 , p {text-align: center;}
     width: 100%;
     margin: 0 auto;
     border-radius: 0.5rem;
-    
 }
 
 /* fin del Reseteo */
@@ -82,10 +81,8 @@ h1 , h2 , h3 , p {text-align: center;}
 
 /* /Header */
 
-
-
 .main--container{
-    display: flex;
+   display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -110,6 +107,12 @@ h1 , h2 , h3 , p {text-align: center;}
 }
 
 /* Cards */
+
+.container--card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
 
 .card {
     border-radius: 1rem;
@@ -142,6 +145,26 @@ h1 , h2 , h3 , p {text-align: center;}
     font-size: 1.8rem;
     font-weight: 300;
 }
+
+.galery{
+    width: 98%;
+    height: auto;
+    background-color: #3e1f4e;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.galery  img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+
+
 
 .footer{
     background-color: #dbc5d4;
@@ -188,4 +211,20 @@ h1 , h2 , h3 , p {text-align: center;}
 
 
 
+@media screen and (max-width: 850px){
+
+    .galery {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #5f58a5;
+    }
+}
+    
+@media screen and (max-width: 480px){
+
+
+    .galery {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #854861;
+    }
+}
 
