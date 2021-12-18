@@ -70,6 +70,7 @@ h1 , h2 , h3 , p {text-align: center;}
     color: #000;
     font-size: 1.6rem;
     padding: 0.3rem ;
+    transition: all 0.3s;
 }
 
 .header--navbar--menu li a:hover{
@@ -124,10 +125,12 @@ h1 , h2 , h3 , p {text-align: center;}
     width: 42rem;
     height: auto;
     margin: 4rem 0;
-    background-color: #000 ;
-    color: #fff;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+   
     box-shadow: rgb(43  15  19 / 50%) 0.1rem 1.2rem 1rem ;
 }
+
+
 
 
 .card--title{
@@ -149,26 +152,35 @@ h1 , h2 , h3 , p {text-align: center;}
 .galery{
     width: 98%;
     height: auto;
-    background-color: #3e1f4e;
+    /* background-color: #3e1f4e; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 1rem;
+    gap: 3rem;
+    padding: 2rem ;
     margin: 2rem auto;
+    background-color: #1a0808;
 }
 
 .galery  img {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
+    transition: all 0.3s;
 }
 
+.galery  img:hover{
+   
+    opacity: 0.5;
+    transform: scale(1.1);
+    
+}
 
 
 
 .footer{
     background-color: #dbc5d4;
     width: 100%;
+    border-radius: 0.5rem;
 }
 
 .footer--container{
@@ -176,7 +188,7 @@ h1 , h2 , h3 , p {text-align: center;}
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
+    padding: 1rem 0;
 }
 
 .footer--container .footer--logo {
@@ -207,6 +219,16 @@ h1 , h2 , h3 , p {text-align: center;}
 .footer--navbar--menu .footer--navbar--item img{
     width: 100%;
     height: auto;
+    transition: all 0.3s;
+}
+
+.footer--navbar--menu .footer--navbar--item img:hover{
+    transform: scale(1.5);
+    border: 0.1rem solid #0a0303;
+    border-radius: 2rem; 
+    opacity: 0.8;
+    padding: 0.5rem;
+   
 }
 
 
